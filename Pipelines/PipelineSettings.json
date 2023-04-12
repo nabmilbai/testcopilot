@@ -1,0 +1,84 @@
+{
+    "//PipelineSettingsTemplateVersion": "The Schema version of this file, should only be updated when the file schema is updated from the template it is created from",
+    "PipelineSettingsTemplateVersion": "2021-08-30",
+    "//AppType": "This setting controls what kind of validation tests that are being done. Valid options: AppSource, PTE, AddOn, OnPrem",
+    "AppType": "PTE",
+    "//ArtifactFeedProjectName": "The DevOps Project that contains the artifact feed to publish to",
+    "ArtifactFeedProjectName": "[NAB_DEVOPS_PROJECT]",
+    "//ArtifactFeedName": "Set this to have another Feed name than the default (app name without special characters)",
+    "ArtifactFeedName": "",
+    "//Container": "Settings related to the container used in the pipeline",
+    "Container": {
+        "//MemoryLimit": "Specifies the amount of RAM to use inside the container. Default is 8G for 8 GB RAM.",
+        "MemoryLimit": "8G"
+    },
+    "//Validation": "Configure the behavior of different validation tests performed in the container",
+    "Validation": {
+        "//SkipNoTranslationFileFoundCheck": "Specifies if there must be a translated xlf file. Set this to true if you do not want any translations at all, and only use english texts from the g.xlf file.",
+        "SkipNoTranslationFileFoundCheck": false
+    },
+    "//Dependencies": "Array of dependencies not found in global feeds.",
+    "Dependencies": [
+        {
+            "//id": "The dependency app Id",
+            "id": "[CHANGE]",
+            "//name": "The dependency app Name, only used to identify the apps manually",
+            "name": "[CHANGE]",
+            "//source": "Specifies where the pipeline can find the dependency app file. Can be any of 'NABOP' (get the app file from NAB OP), 'GlobalFeed' (get the app from a global feed) or 'ProjectFeed' (get the app from a feed in a specified project, FeedProject must be specified)",
+            "source": "[CHANGE]",
+            "//FeedProject": "Must be set if source is ProjectFeed",
+            "FeedProject": "[CHANGE if ProjectFeed - or remove]",
+            "//VersionRequirement": "Can be 'min' (for minimum version), 'specific' (for a specific version) or 'override' (to set a specific version here, NewVersion must be specified)",
+            "VersionRequirement": "[CHANGE]",
+            "//NewVersion": "Set this if VersionRequirement = override",
+            "NewVersion": "[CHANGE if override - or remove]"
+        }
+    ],
+    "//Release": "This section contains tests and settings for the release (delivery) build",
+    "Release": {
+        "//ShowMyCodeSetting": "What the showMyCode should be set to during release. Valid options: true, false. Setting this to 'false' for BC19 or later corresponds to the following resourceExposurePolicy settings: allowDebugging = false, allowDownloadingSource = false, includeSourceInSymbolFile = false. Setting this to 'true' corresponds to allowDebugging = true, allowDownloadingSource = false, includeSourceInSymbolFile = false.",
+        "ShowMyCodeSetting": true,
+        "//mainBranch": "If any other branch than 'master' should be used as target for the delivery PR, set the branch name here. Eg. onprem/170",
+        "mainBranch": "",
+        "//DeliveryFolderPath": "The base folder path for exporting app files on delivery, path mush be accessible from the build server. Eg. \\\\nabfs002\\apps$\\Leverans\\Kunder\\Kxxx - Kundnamn\\",
+        "DeliveryFolderPath": "\\\\nabfs002\\apps$\\Leverans\\Kunder\\[NAB_DEVOPS_PROJECT]\\",
+        "//AllowInternalsVisibleToSetting": "Determines if the InternalsVisibleTo setting is allowed in app.json",
+        "AllowInternalsVisibleToSetting": true,
+        "//ReplaceAppManifestProperties": "Specifies any property in app.json that should be replaced during delivery. preprocessorSymbols will be clearad as default.",
+        "ReplaceAppManifestProperties": {}
+    },
+    "//Build": "This section contains tests and settings for the regular (non-delivery) builds",
+    "Build": {
+        "//ReplaceAppManifestProperties": "Specifies any property in app.json that should be replaced during a regular build. preprocessorSymbols will be clearad as default.",
+        "ReplaceAppManifestProperties": {}
+    },
+    "//TestApp": "This section contains settings for the Test app",
+    "TestApp": {
+        "//UseAlTestTool": "Set this to true to use the AL Test Tool, set it to false to use the C/AL Test Tool",
+        "UseAlTestTool": true,
+        "//TestSuite": "The code for the auto generated Test Suite used by this app",
+        "TestSuite": "[NAB_PREFIX]",
+        "//ExtractTestApp": "Should the TestApp be extracted from the App? Valid options: true, false",
+        "ExtractTestApp": false,
+        "//RunInNewCompany": "Specifies if tests should be run in a newly created company, instead of the CRONUS company",
+        "RunInNewCompany": false
+    },
+    "//WorkItem": "Settings needed to create work items",
+    "WorkItem": {
+        "//AssignedTo": "The user that new bugs should be assigned to. Format must be 'FirstName SurName <e-mail>', as seen in DevOps",
+        "AssignedTo": "[NAB_WI_ASSIGNED_TO]",
+        "//AreaPath": "The Area Path to create the Work Item under",
+        "AreaPath": "NAB Customer Pipelines\\[NAB_DEVOPS_PROJECT]",
+        "//TeamId": "The id of the team, as seen in the team's URL when selected in settings (https://dev.azure.com/nab/Produktavdelningen/_settings/teams). 6003d5cf-eb6d-418c-8e59-f36617670e38=AddOn Team, d4eb19f2-8b34-4ca8-9d0c-62e0deaecd1c=Produktavdelningen Team, f3f4fdb2-2d4b-4e6c-bc31-83a803708a40 = NAB Customer Pipelines Team",
+        "TeamId": "f3f4fdb2-2d4b-4e6c-bc31-83a803708a40",
+        "//TestAssignedTo": "The user that will perform manual tests. A work item will be assigned to this user when the test environment is ready. Format must be 'FirstName SurName <e-mail>', as seen in DevOps",
+        "TestAssignedTo": "[NAB_WI_TST_ASSIGNEDTO]"
+    },
+    "//OnPrem": "This section should only be used when AppType is set to 'OnPrem', otherwise it can be removed",
+    "OnPrem": {
+        "//PermissionsReportPath": "The path to the Permissions Report (must be the detailed version), relative to the 'Pipelines' folder. If not supplied, the default name 'Permission Report Detailed.txt' will be used",
+        "PermissionsReportPath": "",
+        "//BCArtifact": "Specifies the BCArtifact to use for docker containers. If empty, latest CU for latest Major will be used. Format '<version>[/<country>]'. Country is optional, with 'se' as default. Eg. 16.2/fi for Finnish 2020 Release Wave 1 CU2, 15.0 for Swedish 2019 Release Wave 2 RTM, 15/se for latest Swedish CU for 2019 Release Wave 2 etc. ",
+        "BCArtifact": ""
+    }
+}

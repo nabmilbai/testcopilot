@@ -1,0 +1,32 @@
+{
+    "name": "NAB Custom ruleset",
+    "includedRuleSets": [
+        {
+            "action": "Default",
+            "path": ".\\LinterCop.ruleset.json"    
+        }
+    ],    
+    "rules": [
+        {
+            "id": "AA0005",
+            "action": "None",
+            "justification": "Only use BEGIN..END to enclose compound statements"
+        },
+        {
+            "id": "AA0072",
+            "action": "None",
+            "justification": "The name of xxx is not valid. The name of variables and parameters must be suffixed with the type or object name."
+        },
+        {
+            "id": "AA0073",
+            "action": "None",
+            "justification": "The name of temporary variable xxx must be prefixed with Temp."
+        },
+        {
+            "id": "AA0218",
+            "action": "None",
+            "justification": "You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information"
+        }
+    ]
+}
+

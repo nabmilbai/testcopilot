@@ -1,0 +1,48 @@
+{
+  "id": "e0de38f7-1279-4251-8b71-6b04a04ec0d1",
+  "name": "NAB KMILBAI Modifications",
+  "publisher": "NAB Solutions AB",
+  "version": "21.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/logo.png",
+  "application": "21.0.0.0",
+  "platform": "21.0.0.0",
+  "runtime": "10.0",
+  "dependencies": [
+    {
+      "id": "7ef386a9-7053-4bfc-908a-2b19e952c60d",
+      "publisher": "SmartApps",
+      "name": "Spider",
+      "version": "21.0.0.0"
+    }    
+  ],
+  "screenshots": [],
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50100
+    }
+  ],
+  "target": "Cloud",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "features": [
+    "TranslationFile",
+    "NoImplicitWith"
+  ],
+  "internalsVisibleTo": [
+    {
+      "id": "c2306ef3-09fc-480e-81fe-42483d4d53d8",
+      "name": "NAB KMILBAI Modifications Tester",
+      "publisher": "NAB Solutions AB"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+	"folders": [
+		{
+			"path": "App"
+		},
+		{
+			"path": "TestApp"
+		},
+		{
+			"path": "Pipelines"
+		}
+	],
+	"settings": {
+		// Sets the list of paths to code analyzers to use for performing code analysis.
+		"al.codeAnalyzers": [
+			"${PerTenantExtensionCop}",
+			"${CodeCop}",
+			"${UICop}",
+			"${analyzerFolder}BusinessCentral.LinterCop.dll"
+		],
+		// Specifies whether the code analysis should be performed for all source files in the opened folder
+		"al.enableCodeAnalysis": true,
+		// Sets the path to the file containing the customized rules to use when running code analysis.
+		"al.ruleSetPath": "./.vscode/nab.ruleset.json",
+		"alVarHelper.ignoreALPrefix": "NAB",
+		"al.enableCodeActions": true,
+		"git.suggestSmartCommit": false,
+		"git.autofetch": true,
+		// Sets the subfoldername of where the objects will be placed.  'None' prevents the 'Reorganize' to do anything (if you want to apply your own folder structure).
+		"CRS.AlSubFolderName": "src",
+		// The pattern of the filename for non-extension objects.These vars can be used: <Prefix>,<Suffix>,<ObjectType>,<ObjectTypeShort>,<ObjectTypeShortPascalCase>,<ObjectId>,<ObjectName>,<ObjectNameShort>,<ObjectTypeShortUpper>,<BaseName>,<BaseNameShort>,<BaseId> (If you want this to work, you need to put the Id in comment after the base name, like //21)
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		// The pattern of the filename for extension objects. These vars can be used: <Prefix>,<Suffix>,<ObjectType>,<ObjectTypeShort>,<ObjectTypeShortPascalCase>,<ObjectId>,<ObjectName>,<ObjectNameShort>,<ObjectTypeShortUpper>,<BaseName>,<BaseNameShort>,<BaseId> (If you want this to work, you need to put the Id in comment after the base name, like //21)
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		// When using the Reorganize/Rename-commands, this setting will make sure the object name (and filename) will have a Prefix.  Tip: use as a workspace-setting
+		"CRS.ObjectNamePrefix": "NAB ",
+		// When using the Reorganize/Rename-commands, this setting will remove any prefix from the filename (but keep it in object name).  Tip: use as a workspace-setting
+		"CRS.RemovePrefixFromFilename": true,
+		// Automatically will Rename/Reorganize the file you are editing.  Takes into account the prefix/suffix as well.
+		"CRS.OnSaveAlFileAction": "DoNothing",
+		// Customize keywords and colors. Any css color identifier is valid.
+		"todohighlight.keywords": [
+			"REQUEST:",
+			"GITHUB:",
+			"OOS:",
+			"REVIEW:",
+			"WIN:",
+			"CLONE:",
+			"TEST:",
+			{
+				"text": "NOTE:",
+				"color": "#ff0000",
+				"backgroundColor": "yellow",
+				"overviewRulerColor": "grey"
+			},
+			{
+				"text": "HACK:",
+				"color": "#000",
+				"isWholeLine": false
+			},
+			{
+				"text": "TODO:",
+				"color": "red",
+				"border": "1px solid red",
+				"borderRadius": "2px", // NOTE: using borderRadius along with `border` or you will see nothing change
+				"backgroundColor": "rgba(0,0,0,.2)"
+				//other styling properties goes here ... 
+			},
+			{
+				"text": "TODOX:",
+				"color": "red",
+				"border": "1px solid red",
+				"borderRadius": "2px", // NOTE: using borderRadius along with `border` or you will see nothing change
+				"backgroundColor": "rgba(0,0,0,.2)"
+				//other styling properties goes here ... 
+			}
+		],
+		// Default style for all customized keywords
+		"todohighlight.defaultStyle": {
+			"color": "red",
+			"backgroundColor": "lightgrey",
+			"overviewRulerColor": "grey",
+			"cursor": "pointer",
+			// "border": "1px solid #eee",
+			// "borderRadius": "2px",
+			"isWholeLine": false
+			//other styling properties goes here ... 
+		},
+		"todohighlight.include": [
+			"**/*.js",
+			"**/*.jsx",
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.html",
+			"**/*.php",
+			"**/*.css",
+			"**/*.scss",
+			"**/*.al",
+			"**/*.md"
+		],
+		"cSpell.words": [
+			"NAB",
+			"NAB KMILBAI Modifications"
+		],
+		"cSpell.includeRegExpList": [
+			"'(?:[^'\\n]|\\\\').*'", // surrounded with '
+			"///.*", // XML Doc
+			"\"(?:[^\"\\n]|\\\\\").*\"" // surrounded with "
+		],
+		"cSpell.enableFiletypes": [
+			"al"
+		],
+		"cSpell.ignorePaths": [
+			".vscode",
+			"*.code-workspace"
+		],
+		"alOutline.enableCodeCopFixes": true,
+		"alOutline.defaultDataClassification": "CustomerContent",
+		"alOutline.addToolTipsToPageFields": false,
+		"alOutline.codeCleanupActions": [
+			"AddMissingParentheses",
+			"AddObjectCaptions",
+			"FixKeywordsCase",
+			"FixIdentifiersCase",
+			"LockRemovedFieldCaptions",
+			"RemoveEmptyLines",
+			"RemoveEmptySections",
+			"SortPermissions",
+			"SortPermissionSetList",
+			"SortProperties",
+			"SortTableFields",
+			"TrimTrailingWhitespace",
+			"RemoveRedundantAppAreas"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-dynamics-smb.al",
+			"eamodio.gitlens",
+			"waldo.crs-al-language-extension",
+			"heaths.vscode-guid",
+			"wayou.vscode-todo-highlight",
+			"rasmus.al-var-helper",
+			"mhutchie.git-graph",
+			"bartpermentier.al-toolbox",
+			"davidfeldhoff.al-codeactions",
+			"wbrakowski.al-navigator",
+			"nabsolutions.nab-al-tools",
+			"andrzejzwierzchowski.al-code-outline",
+			"streetsidesoftware.code-spell-checker",
+			"stefanmaron.businesscentral-lintercop",
+			"usernamehw.errorlens"
+		]
+	}
+}

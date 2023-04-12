@@ -1,0 +1,38 @@
+parameters:
+- name: BCArtifact
+  displayName: 'BC Artifact to use for building and testing app'
+  type: string
+  default: 'SE'
+- name: BCArtifactsToTest
+  displayName: 'BC Artifacts to run automatic tests on (use empty brackets [] for no additional BC Artifacts)'
+  type: object
+  default: []
+
+variables:
+- group: KeyVaultVariables
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: NAB/NAB DevOps Tools
+      ref: refs/heads/master
+
+trigger: none  
+
+schedules:
+- cron: '0 1 * 3,9 1' # kl. 01.00UTC måndagar i mars,september
+  displayName: 'Weekly - Next Major'
+  branches:
+    include:
+    - master
+  always: true
+
+
+stages:
+- stage: Build
+  jobs: 
+  - template: /BuildTemplates/Pipelines/master-nextmajor-build.yml@templates
+    parameters:
+      BCArtifact: ${{ parameters.BCArtifact }}
+      BCArtifactsToTest: ${{ parameters.BCArtifactsToTest }}

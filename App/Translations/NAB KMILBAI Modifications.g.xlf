@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="NAB KMILBAI Modifications">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1205944714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Car Brand</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Brand - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1205944714 - Field 1856816140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Brand - Field Country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1205944714 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Brand - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1205944714 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Brand - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Car Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Field 1112215218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brand Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Field Brand Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Field 143010134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fuel Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Field Fuel Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1197933710 - Field 4182033785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Power (cc)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table NAB Car Model - Field Power - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>nabAttachment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source>nabAttachments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - NamedType 58801611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot change the value of the key field %1.</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Field name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - NamedType CannotModifyKeyFieldErr</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - NamedType 1358585716" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify a parentId in the request body.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - NamedType MissingParentIdErr</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 2895166340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Content</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control attachmentContent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 412330025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Byte Size</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control byteSize - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 4179522451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control fileName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 2245436958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Modified Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control lastModifiedDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 2178989011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parent Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control parentId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 397882574 - Control 2234676128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parent Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Attachments - Control parentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 205498656 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>pstdPurchaseInvoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Pstd. Purchase Invoices - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 205498656 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source>pstdPurchaseInvoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB - Pstd. Purchase Invoices - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CarBrand</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CarBrands</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Control 4124820944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Car Models</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Control carModels - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Control 2807065388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Control country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1878717026 - Control 3558812865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Brand - Control name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CarModel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CarModels</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 2401376898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brand Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control brandId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 1264958734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fuel Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control fuelType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 3558812865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 70494534 - Control 980892057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Power</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB API Car Model - Control power - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Style Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 219316520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ambiguous</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control AmbiguousExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 3622591740 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AttentionAccent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control AttentionAccentExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 1593425922 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attention</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control AttentionExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 1347508586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Favorable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control FavorableExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 1161882903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>StandardAccent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control StandardAccentExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 2377667429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control StandardExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 2546366455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>StrongAccent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control StrongAccentExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 588729093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Strong</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control StrongExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 4092946814 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subordinate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control SubordinateExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2673371395 - Control 1840939231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unfavorable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NAB Style Page - Control UnfavorableExample - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1138767097 - EnumValue 1820646502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diesel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum NAB Fuel Type - EnumValue Diesel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1138767097 - EnumValue 2999244085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Electric</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum NAB Fuel Type - EnumValue Electric - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1138767097 - EnumValue 1787637036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Petrol</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum NAB Fuel Type - EnumValue Petrol - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

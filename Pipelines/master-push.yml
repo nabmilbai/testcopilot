@@ -1,0 +1,32 @@
+parameters:
+- name: BCArtifact
+  displayName: 'BC Artifact to use for building and testing app'
+  type: string
+  default: 'SE'
+- name: BCArtifactsToTest
+  displayName: 'BC Artifacts to run automatic tests on (use empty brackets [] for no additional BC Artifacts)'
+  type: object
+  default: []
+
+variables:
+- group: KeyVaultVariables
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: NAB/NAB DevOps Tools
+      ref: refs/heads/master
+
+trigger: 
+  branches:
+    include:
+      - master
+  
+stages:
+- stage: Build
+  jobs: 
+  - template: /BuildTemplates/Pipelines/master-push-build.yml@templates
+    parameters:
+      BCArtifact: ${{ parameters.BCArtifact }}
+      BCArtifactsToTest: ${{ parameters.BCArtifactsToTest }}

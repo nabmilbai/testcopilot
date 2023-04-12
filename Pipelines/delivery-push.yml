@@ -1,0 +1,67 @@
+parameters:
+- name: BCArtifact
+  displayName: 'BC Artifact to use for building and testing app'
+  type: string
+  default: 'SE'
+- name: BCArtifactsToTest
+  displayName: 'BC Artifacts to run automatic tests on (use empty brackets [] for no additional BC Artifacts)'
+  type: object
+  default: []
+#- name: BCArtifactsQA
+#  displayName: 'BC Artifacts for manual tests (use empty brackets [] for no manual tests)'
+#  type: object
+#  default:
+#    - 'SE'
+- name: ForceSync
+  displayName: 'Use ForceSync. This allows breaking schema changes to be delivered. AWARE! This will probably cause loss of some data - Make sure you know what you are doing!'
+  type: boolean
+  default: false
+- name: SkipDeployPreviousAppVersion
+  displayName: 'Do not deploy previous version of the app. This skips all compatibility tests against the previous version of the app. AWARE! This could cause severe issues if you introduce breaking changes - Make sure you know what you are doing!'
+  type: boolean
+  default: false
+
+variables:
+- group: KeyVaultVariables
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: NAB/NAB DevOps Tools
+      ref: refs/heads/master
+
+trigger: 
+- delivery
+- deliveryonprem
+
+stages:
+- stage: Build
+  jobs: 
+  - template: /BuildTemplates/Pipelines/delivery-push-build.yml@templates
+    parameters:
+      BCArtifact: ${{ parameters.BCArtifact }}
+      BCArtifactsToTest: ${{ parameters.BCArtifactsToTest }}
+      ForceSync: ${{ parameters.ForceSync }}
+      SkipDeployPreviousAppVersion: ${{ parameters.SkipDeployPreviousAppVersion }}
+
+
+#- ${{ each BCArtifact in parameters.BCArtifactsQA }}:
+#  - stage: QA_${{ replace(replace(BCArtifact,'/','_'),'.','_') }}
+#    jobs: 
+#    - template: /BuildTemplates/Pipelines/delivery-push-test.yml@templates
+#      parameters:
+#        BCArtifact: ${{ BCArtifact }}
+
+- stage: Release
+  jobs: 
+  - template: /BuildTemplates/Pipelines/delivery-push-release.yml@templates
+    parameters:
+      Environment: NoChecks
+
+- stage: Finishing
+  jobs: 
+  - template: /BuildTemplates/Pipelines/delivery-push-finishing.yml@templates
+    parameters:
+      Environment: DeliveryFinishing
+      SkipQA: true
