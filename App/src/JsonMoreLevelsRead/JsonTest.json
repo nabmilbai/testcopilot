@@ -1,0 +1,63 @@
+{
+    "meta": {
+        "currentPage": 1,
+        "lastPage": 8627,
+        "itemsPerPage": 2,
+        "totalItemsCount": 17255
+    },
+    "data": [
+        {
+            "id": 310227,
+            "siteId": 439,
+            "type": "Invoice",
+            "invoiceNumber": "6",
+            "ourReference": "Mats Andersson",
+            "yourReference": "EO36",
+            "language": "sv_SE",
+            "currency": "SEK",
+            "customer": {
+                "id": 404826,
+                "siteId": 439,
+                "customerNumber": "422",
+                "type": "BUSINESS",
+                "organizationNumber": "556354-9798"
+            },
+            "delivery": {
+                "siteId": 439,
+                "name": "Däckshopen i Östersund AB",
+                "address1": "Bangårdsgatan 30"
+            },
+            "receiver": {
+                "id": 404826,
+                "siteId": 439,
+                "customerNumber": "422",
+                "type": "BUSINESS",
+                "organizationNumber": "556354-9798",
+                "name": "Däckshopen i Östersund AB",
+                "address1": "Bangårdsgatan 30"
+            },
+            "lines": [
+                {
+                    "id": 572699,
+                    "type": 0,
+                    "productNumber": "93114504",
+                    "productDescription": "MICHELIN AGILIS CAMPING 225/75R16 116Q",
+                    "description": "MICHELIN AGILIS CAMPING 225/75R16 116Q C-Däck",
+                    "quantity": "4.00",
+                    "unit": "st",
+                    "unitPrice": "1482.48",
+                    "unitCost": "1366.80",
+                    "discountValue": "0.00",
+                    "discountType": "Percent",
+                    "vatPercent": "25.00",
+                    "vatCode": "1",
+                    "externalVatCode": "",
+                    "vatAccount": "2611",
+                    "salesAccount": "3010",
+                    "costAccount": "4000",
+                    "stockAccount": ""
+                }
+            ]
+        }
+    ]
+}
